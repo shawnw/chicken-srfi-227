@@ -8,4 +8,5 @@
  (license "MIT")
  (author "Shawn Wagner")
  (synopsis "SRFI 227: Optional Arguments")
+ (dependencies srfi-1)
  (test-dependencies test))
