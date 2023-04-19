@@ -1,0 +1,11 @@
+;;; srfi-227.egg -*- scheme -*-
+
+((components (extension srfi-227)
+             (extension srfi.227.definition
+                        (component-dependencies srfi-227)))
+ (category lang-exts)
+ (version "1.0")
+ (license "MIT")
+ (author "Shawn Wagner")
+ (synopsis "SRFI 227: Optional Arguments")
+ (test-dependencies test))
