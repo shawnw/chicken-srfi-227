@@ -1,7 +1,9 @@
 ;;; srfi-227.egg -*- scheme -*-
 
 ((components (extension srfi-227)
-             (extension srfi.227.definition
+             (extension srfi-227-definition
+                        (modules (srfi 227 definition))
+                        (source "srfi-227-def.scm")
                         (component-dependencies srfi-227)))
  (category lang-exts)
  (version "1.0")
