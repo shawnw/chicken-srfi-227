@@ -24,7 +24,11 @@
 (module
  (srfi 227 definition)
  *
- (import scheme (chicken base) (srfi 227))
+ (import scheme (chicken base)
+         (only (chicken platform) register-feature!)
+         (srfi 227))
+
+ (register-feature! 'srfi-227-definition)
 
  (define-syntax define-optionals
    (syntax-rules ()

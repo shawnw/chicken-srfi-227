@@ -28,7 +28,12 @@
 (module
  (srfi 227)
  (opt-lambda opt*-lambda let-optionals let-optionals*)
- (import scheme (chicken base) (chicken syntax))
+ (import scheme
+         (chicken base)
+         (only (chicken platform) register-feature!)
+         (chicken syntax))
+
+ (register-feature! 'srfi-227)
 
  (begin-for-syntax
   (import (srfi 1))
